@@ -2,171 +2,287 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Website</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-between w-100">
-                <div>
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto w-100 justify-content-end"> <!-- Changed class to ml-auto -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex ml-auto">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
     
-    <section>
-    <div class="container">
-        <div class="row">
-          <h1 class="text-center"><span> BS 4 flip card</span>created with love by skinniwini</h1>
+    <header class="header">
+        <img src="images/logo.png" id="logo" alt="">
+
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+            <a href="#">contact</a>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="text-center mb-5">Flip Card</h3>
-            <div class="card-flipper effect__hover" data-id="1">
-              <div class="card__front">
-                <div class="card card-01">
-                  <div class="profile-box-01">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Card image cap">
-                  </div>
-                  <div class="card-body text-center">
-                    <span class="badge-box"><i class="fa fa-check"></i></span>
-                    <h4 class="card-title">Mike Parker</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card__back">
-                <div class="card card-01">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Mike Parker</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span class="social-box">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                  <a href="#"><i class="fa fa-behance"></i></a>
-              </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-center mb-5">Flip Card</h3>
-            <div class="card-flipper effect__hover" data-id="1">
-              <div class="card__front">
-                <div class="card card-01">
-                  <div class="profile-box-01">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Card image cap">
-                  </div>
-                  <div class="card-body text-center">
-                    <span class="badge-box"><i class="fa fa-check"></i></span>
-                    <h4 class="card-title">Mike Parker</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card__back">
-                <div class="card card-01">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Mike Parker</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span class="social-box">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                  <a href="#"><i class="fa fa-behance"></i></a>
-              </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-center mb-5">Flip Card</h3>
-            <div class="card-flipper effect__hover" data-id="1">
-              <div class="card__front">
-                <div class="card card-01">
-                  <div class="profile-box-01">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Card image cap">
-                  </div>
-                  <div class="card-body text-center">
-                    <span class="badge-box"><i class="fa fa-check"></i></span>
-                    <h4 class="card-title">Mike Parker</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card__back">
-                <div class="card card-01">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Mike Parker</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span class="social-box">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                  <a href="#"><i class="fa fa-behance"></i></a>
-              </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    </header>
+
+    <div class="background-image">
+        <div class="background-content">
+            <h1>provide an exceptional <br> patient experience</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessit<br>atibus reiciendis eos saepe vitae quibusdam corrupti ip<br> ipsa asperiores reprehenderit </p>
+            <a href="#">Read more</a>
         </div>
-      </div>
-    </section>
-      <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    </div>
+
+    <div class="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h1>about us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, consequuntur harum beatae inventore voluptatem numquam voluptatibus fuga, cupiditate cumque porro perferendis tempora, adipisci culpa odio molestias dolorem blanditiis quos ad!</p>
+                <a href="#">Read more</a>
+                </div>
+                
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="images/chiness.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-services">
+        <div class="service-content">
+            <div class="left-service-content">
+                <h1>Our special services</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis animi similique perspiciatis, impedit blanditiis itaque consequuntur laboriosam ipsa asperiores?</p>
+            </div>
+
+            <div class="right-service-content">
+                <div class="right-btn">
+                    <a href="#">See all services</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-services">
+            <div class="inner-services-content">
+                <div class="service-icon">
+                    <i class="fas fa-notes-medical"></i>
+                </div>
+                <h2>health care</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum corporis impedit nam quaerat vitae incidunt aspernatur, conseq</p>
+
+            </div>
+
+            <div class="inner-services-content">
+                <div class="service-icon">
+                    <i class="fas fa-hospital-user"></i>
+                </div>
+                <h2>health care</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum corporis impedit nam quaerat vitae incidunt aspernatur, conseq</p>
+                
+            </div>
+
+            <div class="inner-services-content">
+                <div class="service-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h2>health care</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum corporis impedit nam quaerat vitae incidunt aspernatur, conseq</p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <img src="images/gal1.jpg" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="images/gal2.jpg" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="images/gal3.jpg" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="images/gal4.jpg" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="images/gal5.jpg" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="images/gal6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="why-choseus">
+    <div class="main-chose">
+        <div class="inner-chose">
+            <img src="images/cute.jpg" alt="">
+        </div>
+
+        <div class="inner-chose">
+            <h1>why chose us </h1>
+
+            <div class="inner-chose-content">
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-notes-medical"></i>
+                    </div>
+                    <div class="icon-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo possimus fugit fuga inventore tenetur natus, </p>
+                    </div>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-hospital-user"></i>
+                        
+                    </div>
+                    <div class="icon-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo possimus fugit fuga inventore tenetur natus, </p>
+                    </div>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="icon-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo possimus fugit fuga inventore tenetur natus, </p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="our-doctors">
+    <h1>Our special doctors</h1>
+
+    <div class="main-doctor">
+        <div class="inner-doctor">
+            <img src="images/gal3.jpg" alt="">
+            <div class="doc-icons">
+                <div class="fab fa-facebook"></div>
+                <div class="fab fa-twitter"></div>
+                <div class="fab fa-instagram"></div>
+                <div class="fab fa-linkedin"></div>
+            </div>
+        </div>
+
+        <div class="inner-doctor">
+            <img src="images/gal2.jpg" alt="">
+            <div class="doc-icons">
+                <div class="fab fa-facebook"></div>
+                <div class="fab fa-twitter"></div>
+                <div class="fab fa-instagram"></div>
+                <div class="fab fa-linkedin"></div>
+            </div>
+        </div>
+
+        <div class="inner-doctor">
+            <img src="images/gal5.jpg" alt="">
+            <div class="doc-icons">
+                <div class="fab fa-facebook"></div>
+                <div class="fab fa-twitter"></div>
+                <div class="fab fa-instagram"></div>
+                <div class="fab fa-linkedin"></div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="main-footer">
+        <div class="inner-footer">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="inner-footer">
+            <h2>heading</h2>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+        </div>
+
+        <div class="inner-footer">
+            <h2>heading</h2>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+        </div>
+
+        <div class="inner-footer">
+            <h2>heading</h2>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+<!-- provide an exceptional patient experience
+<i class="fas fa-notes-medical"></i>
+<i class="fas fa-hospital-user"></i>
+<i class="fas fa-user-md"></i>
+-->
